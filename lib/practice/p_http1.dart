@@ -262,14 +262,18 @@ List<String> labelLinks = [
 void practice01() async {
   var path = Directory.current.path + '\\others\\images\\';
   int currentPageIndex;
+  int cureentLabelIndex;
 
   var hasNextPage = false;
   List<String> linkData;
+
+  cureentLabelIndex = 0;
 
   for (var labelLink in labelLinks) {
     var url = labelLink;
 
     currentPageIndex = 0;
+    cureentLabelIndex++;
 
     while (true) {
       print('---------------------------------------------');
@@ -319,7 +323,7 @@ void practice01() async {
         await _imageLinks.forEach((imageLink) async {
           var filename = RegExp('.*\/(.*png|.*jpg)\$').firstMatch(imageLink).group(1);
           await httpGet(imageLink).then((res) async {
-            await File(path + labels[currentPageIndex - 1] + '\\' + filename)
+            await File(path + labels[cureentLabelIndex - 1] + '\\' + filename)
               .create(recursive: true)
               .then((file) {
                 file.writeAsBytes(res.bodyBytes);
