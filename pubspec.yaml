@@ -1,0 +1,17 @@
+name: dart_irasutoya
+description: A sample command-line application.
+# version: 1.0.0
+# homepage: https://www.example.com
+# author: jay_wu <jay_wu@gss.com.tw>
+
+environment:
+  sdk: '>=2.5.0 <3.0.0'
+
+dependencies:
+  http: ^0.12.0+4
+  beautifulsoup: ^0.0.1
+  pedantic: ^1.9.0
+  path: ^1.6.0
+
+dev_dependencies:
+  test: ^1.6.0
