@@ -319,7 +319,7 @@ void practice01() async {
         await _imageLinks.forEach((imageLink) async {
           var filename = RegExp('.*\/(.*png|.*jpg)\$').firstMatch(imageLink).group(1);
           await httpGet(imageLink).then((res) async {
-            await File(path + filename).writeAsBytes(res.bodyBytes);
+            await File(path + labels[currentPageIndex - 1] + '\\' + filename).writeAsBytes(res.bodyBytes);
           });
         });
       });
