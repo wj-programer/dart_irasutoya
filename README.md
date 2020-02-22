@@ -1,12 +1,19 @@
 # いらすとや 爬蟲
 
+## いらすとや
+
+- [いらすとや](https://www.irasutoya.com/)
+- [ブログで「イラストや」を商用利用する際に知っておくこと!!21点以上は有料](https://hirotonkun.com/irasutoya-commercial-use#2021)
+
 ## 下載圖片流程、目標結構
+
+(EMPTY)
 
 ## 參考文章 python
 
 參考 [「いらすとや」の画像をスクレイピングで自動収集してみた](https://qiita.com/japanesebonobo/items/eb374a94ed0456c88ed7)
 
-### 分析流程
+### 分析原作者流程
 
 - 最上層：迴圈，跑 `begin` ~ `end` 的頁面
 - 全域變數名稱: `linkData = []` (儲存圖片連結)
@@ -38,7 +45,7 @@
 
 因此可以不需要 if-else 判斷
 
-### 程式碼
+### Dart程式碼
 
 1. 透過 `imageLink` 下載圖片
 
