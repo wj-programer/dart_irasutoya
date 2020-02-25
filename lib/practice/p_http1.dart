@@ -16,33 +16,36 @@ void sampleCode1() async {
 /// -------------------------------------------------------------
 
 List<String> labels = [
-  'リクエスト', 'こども', '職業', 'ポーズ', '病気', 'お金', '会社', '違反', 'ビジネス', '道具', '学校', '食べ物', '事故', 'ファッション', '趣味', '医療', 'スポーツ', '建物', 'スイーツ', 'おもちゃ', '旅行', '家電', '家族', 'キャラクター', '文字', '料理', '動物キャラ', '機械', '日本', 'マーク', '車', '音楽', '老人', '飲み物', 'パーティ', '家具', '若者', 'コンピューター', '医療機器', 'マナー', '乗り物', 'ショッピング', 'スマートフォン', '動物', '友達', '食事', '生活', '夏', '魚', 'インターネット', '野菜', '軽食', '災害', '受験', '恋愛', '冬', '美術', '表情', '人体', '運動', '似顔絵', '戦争', 'ペット', '掃除', '世界', '睡眠', '美容', 'お正月', '本', '科学', '風景', '就活', '犬', '虫', '花', 'あかちゃん', 'ファンタジー', '鳥', '植物', '海', '食材', 'フルーツ', '文房具', 'お年賀状', '物語', '猫', '介護', 'ウェディング', '南国', '調味料', 'お風呂', 'ランドマーク', '引越し', 'クリスマス', '環境問題', 'テンプレート', 'スポーツ用具', '中年', '夏休み', '怪我', '髪', 'メディア', '座布団', '書類', '干支', '食器', '政治', 'お祭り', '電車', '宗教', 'ゴミ', '幼稚園', '楽器', 'エネルギー', 'パン', '映画', 'オリンピック', 'メッセージ', '飾り', '農業', '自転車', 'お寿司', '食べ物キャラ', 'ダンス', '体育', 'POP', 'お葬式', '思い出', '周辺機器', 'メタボリック', '棒人間', '梅雨', '歯', '春', '集合', 'お誕生日', '英語', '運動会', 'サッカー', 'カフェ', 'バレンタイン', '宇宙', '室内', '野球', '秋', '吹奏楽', '歌', '卒業式', 'フレーム', '爬虫類両生類', '健康診断', 'トイレ', 'ぴょこ', '新社会人', 'ハロウィン', 'ライン', 'お弁当', '文化祭', 'ゴールデンウィーク', '天気', '深海', '古代生物', '漁業', '洗濯', '夏バテ', 'あいさつ', '貝', '人体キャラ', '地図', '裁縫', 'こども職業', 'お花見', '甲殻類', '年の瀬', '世代', '仏像', '新学期', '地域キャラ', '花火', 'スープ', '入学式', '初詣', '音楽家', '紅葉', 'こどもの日', '林業', '恐竜', '給食', '父の日', '忘年会', 'VR', '忍者', '祝日', '人工知能', '節分', '母の日', 'LGBT', 'クジライルカ', '書道', 'ペンギン', 'ヨガ', '乗り物キャラ', '大晦日', 'パラリンピック', '動物の顔', '日焼け', 'ホワイトデー', '七夕', 'おにぎり', '陸上', '暑中見舞い', '星座', '成人式', '敬老の日', '野菜の切り方', 'ひな祭り', 'お月見', 'パターン', '伝言メモ', '顔アイコン', 'LINEスタンプ', 'イースター', '勤労感謝の日', 'ゆめかわ', '国旗', '一筆箋', 'トランプ', '七五三', 'メッセージカード', '書体', 'エイプリルフール', '禁止', '国旗まとめ', 'ペンキ書体', '宣伝', '白抜き書体', 
+  // 'リクエスト', 'こども', '職業', 'ポーズ', '病気', 'お金', '会社', 
+  // '違反', 'ビジネス', '道具', '学校', 
+  // '食べ物', '事故', 'ファッション', '趣味', '医療', 'スポーツ', '建物', 'スイーツ', 'おもちゃ', '旅行', '家電', '家族', 
+  'キャラクター', '文字', '料理', '動物キャラ', '機械', '日本', 'マーク', '車', '音楽', '老人', '飲み物', 'パーティ', '家具', '若者', 'コンピューター', '医療機器', 'マナー', '乗り物', 'ショッピング', 'スマートフォン', '動物', '友達', '食事', '生活', '夏', '魚', 'インターネット', '野菜', '軽食', '災害', '受験', '恋愛', '冬', '美術', '表情', '人体', '運動', '似顔絵', '戦争', 'ペット', '掃除', '世界', '睡眠', '美容', 'お正月', '本', '科学', '風景', '就活', '犬', '虫', '花', 'あかちゃん', 'ファンタジー', '鳥', '植物', '海', '食材', 'フルーツ', '文房具', 'お年賀状', '物語', '猫', '介護', 'ウェディング', '南国', '調味料', 'お風呂', 'ランドマーク', '引越し', 'クリスマス', '環境問題', 'テンプレート', 'スポーツ用具', '中年', '夏休み', '怪我', '髪', 'メディア', '座布団', '書類', '干支', '食器', '政治', 'お祭り', '電車', '宗教', 'ゴミ', '幼稚園', '楽器', 'エネルギー', 'パン', '映画', 'オリンピック', 'メッセージ', '飾り', '農業', '自転車', 'お寿司', '食べ物キャラ', 'ダンス', '体育', 'POP', 'お葬式', '思い出', '周辺機器', 'メタボリック', '棒人間', '梅雨', '歯', '春', '集合', 'お誕生日', '英語', '運動会', 'サッカー', 'カフェ', 'バレンタイン', '宇宙', '室内', '野球', '秋', '吹奏楽', '歌', '卒業式', 'フレーム', '爬虫類両生類', '健康診断', 'トイレ', 'ぴょこ', '新社会人', 'ハロウィン', 'ライン', 'お弁当', '文化祭', 'ゴールデンウィーク', '天気', '深海', '古代生物', '漁業', '洗濯', '夏バテ', 'あいさつ', '貝', '人体キャラ', '地図', '裁縫', 'こども職業', 'お花見', '甲殻類', '年の瀬', '世代', '仏像', '新学期', '地域キャラ', '花火', 'スープ', '入学式', '初詣', '音楽家', '紅葉', 'こどもの日', '林業', '恐竜', '給食', '父の日', '忘年会', 'VR', '忍者', '祝日', '人工知能', '節分', '母の日', 'LGBT', 'クジライルカ', '書道', 'ペンギン', 'ヨガ', '乗り物キャラ', '大晦日', 'パラリンピック', '動物の顔', '日焼け', 'ホワイトデー', '七夕', 'おにぎり', '陸上', '暑中見舞い', '星座', '成人式', '敬老の日', '野菜の切り方', 'ひな祭り', 'お月見', 'パターン', '伝言メモ', '顔アイコン', 'LINEスタンプ', 'イースター', '勤労感謝の日', 'ゆめかわ', '国旗', '一筆箋', 'トランプ', '七五三', 'メッセージカード', '書体', 'エイプリルフール', '禁止', '国旗まとめ', 'ペンキ書体', '宣伝', '白抜き書体', 
 ];
 
 List<String> labelLinks = [
-  'https://www.irasutoya.com/search/label/%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88',
-  'https://www.irasutoya.com/search/label/%E3%81%93%E3%81%A9%E3%82%82',
-  'https://www.irasutoya.com/search/label/%E8%81%B7%E6%A5%AD',
-  'https://www.irasutoya.com/search/label/%E3%83%9D%E3%83%BC%E3%82%BA',
-  'https://www.irasutoya.com/search/label/%E7%97%85%E6%B0%97',
-  'https://www.irasutoya.com/search/label/%E3%81%8A%E9%87%91',
-  'https://www.irasutoya.com/search/label/%E4%BC%9A%E7%A4%BE',
-  'https://www.irasutoya.com/search/label/%E9%81%95%E5%8F%8D',
-  'https://www.irasutoya.com/search/label/%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9',
-  'https://www.irasutoya.com/search/label/%E9%81%93%E5%85%B7',
-  'https://www.irasutoya.com/search/label/%E5%AD%A6%E6%A0%A1',
-  'https://www.irasutoya.com/search/label/%E9%A3%9F%E3%81%B9%E7%89%A9',
-  'https://www.irasutoya.com/search/label/%E4%BA%8B%E6%95%85',
-  'https://www.irasutoya.com/search/label/%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3',
-  'https://www.irasutoya.com/search/label/%E8%B6%A3%E5%91%B3',
-  'https://www.irasutoya.com/search/label/%E5%8C%BB%E7%99%82',
-  'https://www.irasutoya.com/search/label/%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84',
-  'https://www.irasutoya.com/search/label/%E5%BB%BA%E7%89%A9',
-  'https://www.irasutoya.com/search/label/%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%84',
-  'https://www.irasutoya.com/search/label/%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83',
-  'https://www.irasutoya.com/search/label/%E6%97%85%E8%A1%8C',
-  'https://www.irasutoya.com/search/label/%E5%AE%B6%E9%9B%BB',
-  'https://www.irasutoya.com/search/label/%E5%AE%B6%E6%97%8F',
+  // 'https://www.irasutoya.com/search/label/%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88',
+  // 'https://www.irasutoya.com/search/label/%E3%81%93%E3%81%A9%E3%82%82',
+  // 'https://www.irasutoya.com/search/label/%E8%81%B7%E6%A5%AD',
+  // 'https://www.irasutoya.com/search/label/%E3%83%9D%E3%83%BC%E3%82%BA',
+  // 'https://www.irasutoya.com/search/label/%E7%97%85%E6%B0%97',
+  // 'https://www.irasutoya.com/search/label/%E3%81%8A%E9%87%91',
+  // 'https://www.irasutoya.com/search/label/%E4%BC%9A%E7%A4%BE',
+  // 'https://www.irasutoya.com/search/label/%E9%81%95%E5%8F%8D',
+  // 'https://www.irasutoya.com/search/label/%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9',
+  // 'https://www.irasutoya.com/search/label/%E9%81%93%E5%85%B7',
+  // 'https://www.irasutoya.com/search/label/%E5%AD%A6%E6%A0%A1',
+  // 'https://www.irasutoya.com/search/label/%E9%A3%9F%E3%81%B9%E7%89%A9',
+  // 'https://www.irasutoya.com/search/label/%E4%BA%8B%E6%95%85',
+  // 'https://www.irasutoya.com/search/label/%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3',
+  // 'https://www.irasutoya.com/search/label/%E8%B6%A3%E5%91%B3',
+  // 'https://www.irasutoya.com/search/label/%E5%8C%BB%E7%99%82',
+  // 'https://www.irasutoya.com/search/label/%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84',
+  // 'https://www.irasutoya.com/search/label/%E5%BB%BA%E7%89%A9',
+  // 'https://www.irasutoya.com/search/label/%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%84',
+  // 'https://www.irasutoya.com/search/label/%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83',
+  // 'https://www.irasutoya.com/search/label/%E6%97%85%E8%A1%8C',
+  // 'https://www.irasutoya.com/search/label/%E5%AE%B6%E9%9B%BB',
+  // 'https://www.irasutoya.com/search/label/%E5%AE%B6%E6%97%8F',
   'https://www.irasutoya.com/search/label/%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC',
   'https://www.irasutoya.com/search/label/%E6%96%87%E5%AD%97',
   'https://www.irasutoya.com/search/label/%E6%96%99%E7%90%86',
@@ -322,8 +325,8 @@ void practice01() async {
 
         await _imageLinks.forEach((imageLink) async {
           var filename = RegExp('.*\/(.*png|.*jpg)\$').firstMatch(imageLink).group(1);
-          await httpGet(imageLink).then((res) async {
-            await File(path + labels[cureentLabelIndex - 1] + '\\' + filename)
+          await httpGet(imageLink).then((res) {
+            File(path + labels[cureentLabelIndex - 1] + '\\' + filename)
               .create(recursive: true)
               .then((file) {
                 file.writeAsBytes(res.bodyBytes);
